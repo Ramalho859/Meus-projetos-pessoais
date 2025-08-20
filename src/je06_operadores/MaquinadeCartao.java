@@ -22,18 +22,19 @@ public class MaquinadeCartao {
                 System.out.println("seu saldo atual e: " +i);
                 break;
 
-            case 2:
-                System.out.println("Comprar no credito");
-                System.out.println("Digite o preço do produto");
-                int preco2 = scanner.nextInt();
-                System.out.println("quer parcelar em quantas vezes");
-                int parcela = scanner.nextInt();
-                int i1 = saldo - preco2;
-                int i2 = i1 / parcela ;
-                System.out.println("vc pagara isso por mes: "+i2);
-                System.out.println("seu saldo autal sera: "+i1);
-                break;
-        }
+                case 2:
+                    System.out.println("Comprar no credito");
+                    System.out.println("Digite o preço do produto");
+                    int preco2 = scanner.nextInt();
+                    System.out.println("quer parcelar em quantas vezes");
+                    int parcela = scanner.nextInt();
+                    int i1 = saldo - preco2;
+                    int i2 = i1 / parcela;
+                    System.out.println("vc pagara isso por mes: " + i2);
+                    System.out.println("seu saldo autal sera: " + i1);
+                    break;
+            }
+        }while (opc != 0);
     }
 }
 // ctrl + alt + l   Arruma a identaçao
